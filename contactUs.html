@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports</title>
+    <style>
+       main{
+           display: grid;
+           grid-template-columns: repeat(4, 1fr);
+           grid-template-rows: repeat(8, 150px);
+           grid-template-areas: "aa aa bb cc"
+                                "aa aa bb cc"
+                                "dd ee gg hh"
+                                "dd ff gg hh"
+                                "ii jj kk ll"
+                                "pp jj kk ll"
+                                "mm mm nn oo"
+                                "mm mm nn oo";
+          gap: 1em;                      
+       }
+
+       aside{
+           background-color: cyan;
+           border-radius: 8px;
+       }
+
+       aside:nth-of-type(1){
+           grid-area: aa;
+       }
+       aside:nth-of-type(2){
+           grid-area: bb;
+       }
+       aside:nth-of-type(3){
+           grid-area: cc;
+       }
+       aside:nth-of-type(4){
+           grid-area: dd;
+       }
+       aside:nth-of-type(5){
+           grid-area:ee ;
+       }
+       aside:nth-of-type(6){
+           grid-area: ff;
+       }
+       aside:nth-of-type(7){
+           grid-area: gg;
+       }
+       aside:nth-of-type(8){
+           grid-area: hh;
+       }
+       aside:nth-of-type(9){
+           grid-area: ii;
+       }
+       aside:nth-of-type(10){
+           grid-area: jj;
+       }
+       aside:nth-of-type(11){
+           grid-area: kk;
+       }
+       aside:nth-of-type(12){
+           grid-area: ll;
+       }
+       aside:nth-of-type(13){
+           grid-area: mm ;
+       }
+       aside:nth-of-type(14){
+           grid-area: nn;
+       }
+       aside:nth-of-type(15){
+           grid-area: oo;
+       }
+       aside:nth-of-type(16){
+           grid-area: pp;
+       }
+    </style>
+</head>
+<body>
+    <main>
+        <aside></aside>
+        <aside></aside>
+        <aside></aside>
+        <aside></aside>
+        <aside></aside>
+        <aside></aside>
+        <aside></aside>
+        <aside></aside>
+        <aside></aside>
+        <aside></aside>
+        <aside></aside>
+        <aside></aside>
+        <aside></aside>
+        <aside></aside>
+        <aside></aside>
+        <aside></aside>
+    </main>
+</body>
+</html>
