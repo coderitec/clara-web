@@ -1,0 +1,49 @@
+section{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows:150px 100px 200px;
+    gap: 5px;
+    grid-template-areas: "me me me you you she"
+                         "me me me her her him"
+                         "us us them them he he";
+}
+
+article{
+    background-color: aqua;
+    border-radius: 15px;
+}
+
+article:nth-of-type(1){
+    grid-area: me;
+    background: url(https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blta1562929a64c2f51/629f1a22169e63365ff23b5a/IMG_6642.jpg);
+    filter: blur(30%);
+    background-size: cover;
+}
+article:nth-of-type(2){
+    grid-area: you;
+}
+article:nth-of-type(3){
+    grid-area: she;
+}
+article:nth-of-type(4){
+    grid-area: her;
+}
+article:nth-of-type(5){
+    grid-area: him;
+}
+article:nth-of-type(6){
+    grid-area: us;
+}
+article:nth-of-type(7){
+    grid-area: them;
+}
+article:nth-of-type(8){
+    grid-area: he;
+}
+
+article h2{
+    width: 20%;
+    text-align: center;
+    margin:  90px auto;
+    color: wheat;
+}
